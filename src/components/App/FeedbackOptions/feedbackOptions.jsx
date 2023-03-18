@@ -1,15 +1,7 @@
 import React from 'react';
 import { BtnFeed } from './feedbackOptions.styled';
-const FeedbackOptions = ({
-  options,
-  onLeaveFeedback,
-  onTotalCount,
-  onTotalPercentage,
-
-}) => {
-
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    
     <>
       <ul>
         <li>
@@ -18,11 +10,7 @@ const FeedbackOptions = ({
               item={index}
               key={index}
               type="button"
-              onClick={() => {
-                onLeaveFeedback(index);
-                onTotalCount();
-                onTotalPercentage();
-              }}
+              onClick={() => onLeaveFeedback(index)}
             >
               {index}
             </BtnFeed>
