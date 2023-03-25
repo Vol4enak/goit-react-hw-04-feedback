@@ -30,7 +30,7 @@ export default function App() {
     }
     setPositivePercentage((good / total) * 100);
   }, [good, total]);
-
+console.log(123)
   const handleChange = feedBack => {
     switch (feedBack) {
       case 'good':
