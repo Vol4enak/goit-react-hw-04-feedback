@@ -13,10 +13,9 @@ export default function App() {
   const [total, setTotal] = useState(0);
   const [positivePercentage, setPositivePercentage] = useState(0);
   const a = useRef(true);
-    const b = useRef(true);
+  const b = useRef(true);
   useEffect(() => {
     if (a.current) {
-      console.log(123123123);
       a.current = false;
       return;
     }
@@ -25,7 +24,7 @@ export default function App() {
 
   useEffect(() => {
     if (b.current) {
-       b.current = false;
+      b.current = false;
       return;
     }
     setPositivePercentage((good / total) * 100);
